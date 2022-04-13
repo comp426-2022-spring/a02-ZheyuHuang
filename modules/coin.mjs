@@ -43,6 +43,11 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
+  const results = [];
+  for (let i = 0; i < flips; i++) {
+    results[i] = coinFlip();
+  }
+  return results;
 
 }
 
@@ -83,4 +88,4 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
-export {coinFlip}
+export {coinFlip, coinFlips}
