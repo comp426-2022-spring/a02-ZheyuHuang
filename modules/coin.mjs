@@ -43,6 +43,9 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
+  if (!flips){
+    flips = 1;
+  }
   const results = [];
   for (let i = 0; i < flips; i++) {
     results[i] = coinFlip();
