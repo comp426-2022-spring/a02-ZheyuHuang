@@ -11,6 +11,6 @@ console.log(flipACoin("tails"));
 const args = minimist(process.argv.slice(2))
 const str = args['call']
 if(!(str === "heads" || str === "tails" )){
-    throw new Error("User not found")
+    throw new Error("no input")
 }
 console.log(flipACoin(str));
