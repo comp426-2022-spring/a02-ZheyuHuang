@@ -1,5 +1,6 @@
 // Import the coinFlip function from your coin.mjs file
-import {coinFlips} from "./modules/coin.mjs";
+import {coinFlip, flipACoin} from "./modules/coin.mjs";
 // Call the coinFlip function and put the return into STDOUT
+//const array = coinFlips(100);
 
-console.log(coinFlips(100));
+console.log(flipACoin("tails"));

@@ -66,6 +66,21 @@ function coinFlips(flips) {
 
 function countFlips(array) {
 
+  var object = {
+    heads : 0,
+    tails : 0
+  }
+
+  array.forEach(myFunction);
+
+  function myFunction(value, index, array){
+    if (value == "heads"){
+      object["heads"] =  object["heads"] + 1;
+    }else{
+      object['tails'] += 1;
+    }
+  }
+  return (object)
 }
 
 /** Flip a coin!
@@ -79,8 +94,18 @@ function countFlips(array) {
  * returns: { call: 'tails', flip: 'heads', result: 'lose' }
  */
 
-function flipACoin(call) {
-
+function flipACoin(call1) {
+  let call = call1;
+  let flip = coinFlip();
+  let result = "";
+  if (call === flip){
+    result = 'win';
+  }else{
+    result = 'lose';
+  }
+  
+  const object2 = {call, flip, result}
+  return(object2)
 }
 
 
@@ -88,4 +113,4 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
-export {coinFlip, coinFlips}
+export {coinFlip, coinFlips, countFlips, flipACoin}
