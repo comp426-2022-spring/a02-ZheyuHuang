@@ -78,9 +78,18 @@ function countFlips(array) {
 
   function myFunction(value, index, array){
     if (value == "heads"){
-      object["heads"] =  object["heads"] + 1;
+      object["heads"] += 1;
     }else{
       object['tails'] += 1;
+    }
+
+    if (index = 1){
+      if (object["heads"] = 1){
+        return({heads: 1})
+      }
+      else{
+        return({tails: 1})
+      }
     }
   }
   return (object)
