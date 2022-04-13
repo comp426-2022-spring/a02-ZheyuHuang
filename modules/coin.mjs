@@ -15,7 +15,12 @@
  */
 
 function coinFlip() {
-
+  let rand = Math.floor((Math.random() * 100) + 1)
+  if (rand % 2 == 0){
+    return "heads";
+  } else {
+    return "tails";
+  }
 }
 
 /** Multiple coin flips
@@ -78,3 +83,4 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
+export {coinFlip}
