@@ -21,7 +21,7 @@ function coinFlip() {
   // } else {
   //   return "tails";
   // }
-  return (Math.round(Math.random()) == 0) ? HEADS : TAILS
+  return (Math.round(Math.random()) == 0) ? 'heads' : 'tails'
 
 }
 
