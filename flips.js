@@ -5,6 +5,6 @@ import minimist from 'minimist';
 // Call the coinFlip function and put the return into STDOUT
 
 const args = minimist(process.argv.slice(2))
-var arr = coinFlips(args['number'])
+var arr = coinFlips(args['number'] || 1)
 console.log(arr);
 console.log(countFlips(arr));
