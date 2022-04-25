@@ -43,12 +43,12 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-  if (!flips){
-    flips = 1;
-  }
-  const results = [];
+  // if (!flips){
+  //   flips = 1;
+  // }
+  var results = [];
   for (let i = 0; i < flips; i++) {
-    results[i] = coinFlip();
+    results.push(coinFlip());
   }
   return results;
 
