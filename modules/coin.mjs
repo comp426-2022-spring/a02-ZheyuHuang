@@ -21,7 +21,13 @@ function coinFlip() {
   // } else {
   //   return "tails";
   // }
-  return (Math.round(Math.random()) == 0) ? 'heads' : 'tails'
+  if (Math.round(Math.random()) == 0){
+    return "heads";
+  }
+  else{
+    return "tails"
+  }
+  //return (Math.round(Math.random()) == 0) ? 'heads' : 'tails'
 
 }
 
