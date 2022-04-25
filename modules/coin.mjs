@@ -15,19 +15,8 @@
  */
 
 function coinFlip() {
-  // let rand = Math.floor((Math.random() * 100) + 1)
-  // if (rand % 2 == 0){
-  //   return "heads";
-  // } else {
-  //   return "tails";
-  // }
-  if (Math.round(Math.random()) == 0){
-    return "heads";
-  }
-  else{
-    return "tails"
-  }
-  //return (Math.round(Math.random()) == 0) ? 'heads' : 'tails'
+  
+  return (Math.round(Math.random()) == 0) ? "heads" : "tails"
 
 }
 
