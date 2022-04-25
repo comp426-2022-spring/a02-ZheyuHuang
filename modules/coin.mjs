@@ -15,12 +15,14 @@
  */
 
 function coinFlip() {
-  let rand = Math.floor((Math.random() * 100) + 1)
-  if (rand % 2 == 0){
-    return "heads";
-  } else {
-    return "tails";
-  }
+  // let rand = Math.floor((Math.random() * 100) + 1)
+  // if (rand % 2 == 0){
+  //   return "heads";
+  // } else {
+  //   return "tails";
+  // }
+  return (Math.round(Math.random()) == 0) ? HEADS : TAILS
+
 }
 
 /** Multiple coin flips
